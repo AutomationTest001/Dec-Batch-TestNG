@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Login_Suite" verbose="4" parallel="tests" thread-count="2">
+
+  <test  name="Login - Mutual Fund">
+    <classes>
+      <class name="com.itview.testng.LoginTestCase_MutualFund"/>
+     </classes>
+  </test> <!-- Test -->
+  
+  <test  name="Login - OrangeHRM">
+    <classes>
+      <class name="com.itview.testng.LoginTestCase_OrangeHRM"/>
+     </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
