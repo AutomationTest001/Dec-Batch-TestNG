@@ -30,13 +30,13 @@ public class LoginTestCase_MutualFund {
   //  Assert.fail(); // forcelly fail any test case
   }
   
-  @Test(priority = 1,description = "Test Case to verify login using 'TestUser' user",dependsOnMethods="loginAdminTest",groups="LoginModule",invocationCount = 3,enabled=false)
+  @Test(priority = 1,description = "Test Case to verify login using 'TestUser' user",dependsOnMethods="loginAdminTest",groups="LoginModule")
   public void loginTuserTest() {  
 	     
      w.get("http://altoromutual.com:8080/login.jsp");
      w.findElement(By.id("uid")).sendKeys("tuser");
      w.findElement(By.id("passw")).sendKeys("tuser");
-     w.findElement(By.name("Submit")).click();
+     w.findElement(By.name("btnSubmit")).click();
      w.findElement(By.linkText("Sign Off")).click();
     
     

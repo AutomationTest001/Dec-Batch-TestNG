@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Login_Suite]" parallel="tests">
-  <test thread-count="2" verbose="0" name="Login - Mutual Fund(failed)" parallel="tests">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Login_Suite]">
+  <test thread-count="2" verbose="0" name="Login - Mutual Fund(failed)">
     <classes>
       <class name="com.itview.testng.LoginTestCase_MutualFund">
         <methods>

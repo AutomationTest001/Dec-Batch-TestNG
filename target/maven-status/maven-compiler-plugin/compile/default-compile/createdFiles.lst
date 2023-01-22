@@ -1,0 +1,6 @@
+com\itview\testcases\selenium_testng_test\App.class
+com\itview\pageobject\CreditCardPayoff_PageObj.class
+com\itview\pageobject\CarHomeLoanEMI_PageObj.class
+com\itview\pageobject\FixedDeposit_PageObj.class
+com\itview\pageobject\TestBase.class
+com\itview\pageobject\EducationEMI_PageObj.class
