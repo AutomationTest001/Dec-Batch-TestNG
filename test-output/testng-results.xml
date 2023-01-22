@@ -1,25 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="67638" started-at="2023-01-15T09:45:58 IST" finished-at="2023-01-15T09:47:06 IST">
+  <suite name="Login_Suite" duration-ms="40074" started-at="2023-01-22T10:21:54 IST" finished-at="2023-01-22T10:22:34 IST">
     <groups>
+      <group name="LoginModule">
+        <method signature="LoginTestCase_MutualFund.loginAdminTest()[pri:0, instance:com.itview.testng.LoginTestCase_MutualFund@51c8530f]" name="loginAdminTest" class="com.itview.testng.LoginTestCase_MutualFund"/>
+        <method signature="LoginTestCase_MutualFund.loginInvalidUser()[pri:2, instance:com.itview.testng.LoginTestCase_MutualFund@51c8530f]" name="loginInvalidUser" class="com.itview.testng.LoginTestCase_MutualFund"/>
+      </group> <!-- LoginModule -->
     </groups>
-    <test name="Default test" duration-ms="67638" started-at="2023-01-15T09:45:58 IST" finished-at="2023-01-15T09:47:06 IST">
-      <class name="com.itview.datadriven.DataDrivenTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.itview.datadriven.DataDrivenTest@396e2f39]" name="beforeTest" is-config="true" duration-ms="40691" started-at="2023-01-15T09:45:58 IST" finished-at="2023-01-15T09:46:39 IST">
+    <test name="Login - Mutual Fund" duration-ms="23532" started-at="2023-01-22T10:21:54 IST" finished-at="2023-01-22T10:22:18 IST">
+      <class name="com.itview.testng.LoginTestCase_MutualFund">
+        <test-method status="PASS" signature="preCondition_MutualFund()[pri:0, instance:com.itview.testng.LoginTestCase_MutualFund@51c8530f]" name="preCondition_MutualFund" is-config="true" duration-ms="2874" started-at="2023-01-22T10:21:54 IST" finished-at="2023-01-22T10:21:57 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.itview.datadriven.DataDrivenTest@396e2f39]" name="f" duration-ms="23723" started-at="2023-01-15T09:46:39 IST" finished-at="2023-01-15T09:47:03 IST">
+        </test-method> <!-- preCondition_MutualFund -->
+        <test-method status="PASS" signature="loginAdminTest()[pri:0, instance:com.itview.testng.LoginTestCase_MutualFund@51c8530f]" name="loginAdminTest" duration-ms="3242" started-at="2023-01-22T10:21:57 IST" description="Test Case to verify login using &#039;Admin&#039; user" finished-at="2023-01-22T10:22:00 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.itview.datadriven.DataDrivenTest@396e2f39]" name="afterTest" is-config="true" duration-ms="3073" started-at="2023-01-15T09:47:03 IST" finished-at="2023-01-15T09:47:06 IST">
+        </test-method> <!-- loginAdminTest -->
+        <test-method status="PASS" signature="loginInvalidUser()[pri:2, instance:com.itview.testng.LoginTestCase_MutualFund@51c8530f]" name="loginInvalidUser" duration-ms="1160" started-at="2023-01-22T10:22:00 IST" description="Test Case to verify login using &#039;Invalid&#039; user" depends-on-methods="com.itview.testng.LoginTestCase_MutualFund.loginAdminTest" finished-at="2023-01-22T10:22:02 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.itview.datadriven.DataDrivenTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- loginInvalidUser -->
+        <test-method status="PASS" signature="postCondition_MutualFund()[pri:0, instance:com.itview.testng.LoginTestCase_MutualFund@51c8530f]" name="postCondition_MutualFund" is-config="true" duration-ms="16216" started-at="2023-01-22T10:22:02 IST" finished-at="2023-01-22T10:22:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition_MutualFund -->
+      </class> <!-- com.itview.testng.LoginTestCase_MutualFund -->
+    </test> <!-- Login - Mutual Fund -->
+    <test name="Login - OrangeHRM" duration-ms="16500" started-at="2023-01-22T10:22:18 IST" finished-at="2023-01-22T10:22:34 IST">
+      <class name="com.itview.testng.LoginTestCase_OrangeHRM">
+        <test-method status="PASS" signature="preCondition_OrangeHRM()[pri:0, instance:com.itview.testng.LoginTestCase_OrangeHRM@27d415d9]" name="preCondition_OrangeHRM" is-config="true" duration-ms="3613" started-at="2023-01-22T10:22:18 IST" finished-at="2023-01-22T10:22:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition_OrangeHRM -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.itview.testng.LoginTestCase_OrangeHRM@27d415d9]" name="loginTest" duration-ms="12666" started-at="2023-01-22T10:22:21 IST" description="Test case to verify login functionality" finished-at="2023-01-22T10:22:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="postCondition_OrangeHRM()[pri:0, instance:com.itview.testng.LoginTestCase_OrangeHRM@27d415d9]" name="postCondition_OrangeHRM" is-config="true" duration-ms="217" started-at="2023-01-22T10:22:34 IST" finished-at="2023-01-22T10:22:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition_OrangeHRM -->
+      </class> <!-- com.itview.testng.LoginTestCase_OrangeHRM -->
+    </test> <!-- Login - OrangeHRM -->
+  </suite> <!-- Login_Suite -->
 </testng-results>

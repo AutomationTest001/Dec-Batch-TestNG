@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.itview.datadriven.DataDrivenTest">
+      <class name="com.itview.testng.LoginTestCase_MutualFund">
         <methods>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="f"/>
+          <include name="postCondition_MutualFund"/>
+          <include name="preCondition_MutualFund"/>
+          <include name="loginTuserTest"/>
+          <include name="loginInvalidUser"/>
+          <include name="loginAdminTest"/>
         </methods>
-      </class> <!-- com.itview.datadriven.DataDrivenTest -->
+      </class> <!-- com.itview.testng.LoginTestCase_MutualFund -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
